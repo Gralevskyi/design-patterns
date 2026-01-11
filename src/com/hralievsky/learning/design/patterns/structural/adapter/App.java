@@ -13,6 +13,14 @@ import com.hralievsky.learning.design.patterns.structural.adapter.thirdpartyserv
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+
+/**
+ * Problem: Multiple weather sensors (American, European, Scientific) have incompatible interfaces - different temperature units (Fahrenheit, Celsius, Kelvin),
+ * location formats (String, coordinates), and date types (String, LocalDate, LocalDateTime).
+ *
+ * Solution: Created adapters to convert each sensor's interface to a unified WeatherDashboard interface.
+ */
+
 public class App {
 
     public static void main(String[] args) {
